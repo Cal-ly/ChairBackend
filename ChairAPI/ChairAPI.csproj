@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChairsLib\ChairsLib.csproj" />
+    <ProjectReference Include="..\ChairsLib\ChairLib.csproj" />
   </ItemGroup>
 
 </Project>

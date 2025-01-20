@@ -1,4 +1,4 @@
-using ChairsLib;
+using ChairLib;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<ChairsRepository>();
+builder.Services.AddSingleton<ChairRepository>();
 
 // Add CORS policy
 builder.Services.AddCors(options =>

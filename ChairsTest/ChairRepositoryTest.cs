@@ -1,20 +1,20 @@
-﻿namespace ChairsTest;
+﻿namespace ChairTest;
 
-using ChairsLib;
+using ChairLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 // Tests follow the triple A pattern - Arrange, Act, Assert.
 // Also I have tried to keep the naming convention consistent. Meaning <MethodUnderTest>_<Scenario>_<ExpectedResult>.
 
 [TestClass]
-public class ChairsRepositoryTests
+public class ChairRepositoryTests
 {
-    private ChairsRepository _repository = null!;
+    private ChairRepository _repository = null!;
 
     [TestInitialize]
     public void Setup()
     {
-        _repository = new ChairsRepository();
+        _repository = new ChairRepository();
     }
 
     [TestMethod]

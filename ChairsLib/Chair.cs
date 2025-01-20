@@ -1,4 +1,4 @@
-﻿namespace ChairsLib;
+﻿namespace ChairLib;
 
 public class Chair
 {

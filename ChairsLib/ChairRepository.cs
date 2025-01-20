@@ -1,10 +1,11 @@
-﻿namespace ChairsLib;
-public class ChairsRepository
+﻿namespace ChairLib;
+
+public class ChairRepository
 {
     private readonly List<Chair> _chairs = [];
     private int _nextId = 1;
 
-    public ChairsRepository()
+    public ChairRepository()
     {
         Add(new Chair { Model = "The Egg", MaxWeight = 100, HasPillow = true });
         Add(new Chair { Model = "Swan", MaxWeight = 120, HasPillow = false });

@@ -1,17 +1,17 @@
 namespace ChairAPI.Controllers;
 
-using ChairsLib;
+using ChairLib;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("api/[controller]")]
-public class ChairsController : ControllerBase
+public class ChairController : ControllerBase
 {
-    private readonly ChairsRepository _repository;
+    private readonly ChairRepository _repository;
 
-    public ChairsController()
+    public ChairController()
     {
-        _repository = new ChairsRepository();
+        _repository = new ChairRepository();
     }
 
     [HttpGet]
