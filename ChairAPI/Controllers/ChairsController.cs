@@ -1,4 +1,4 @@
-namespace ChairsAPI.Controllers;
+namespace ChairAPI.Controllers;
 
 using ChairsLib;
 using Microsoft.AspNetCore.Mvc;

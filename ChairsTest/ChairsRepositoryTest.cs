@@ -1,4 +1,4 @@
-﻿namespace ChairsLibTests;
+﻿namespace ChairsTest;
 
 using ChairsLib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -45,14 +45,13 @@ public class ChairsRepositoryTests
     }
 
     [TestMethod]
-    [ExpectedException(typeof(ArgumentException))]
     public void Add_ShouldThrowException_WhenModelIsInvalid()
     {
         // Arrange
         var invalidChair = new Chair { Model = "A", MaxWeight = 100, HasPillow = true };
 
-        // Act
-        _repository.Add(invalidChair);
+        // Act & Assert
+        Assert.ThrowsException<ArgumentException>(() => _repository.Add(invalidChair));
     }
 
     [TestMethod]
