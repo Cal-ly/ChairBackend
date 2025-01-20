@@ -8,8 +8,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<ChairRepository>();
-
 // Add CORS policy
 builder.Services.AddCors(options =>
 {
@@ -21,20 +19,21 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddSingleton<ChairRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
 // Use CORS
 app.UseCors("AllowAll");
+
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

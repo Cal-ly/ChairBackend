@@ -9,9 +9,9 @@ public class ChairController : ControllerBase
 {
     private readonly ChairRepository _repository;
 
-    public ChairController()
+    public ChairController(ChairRepository repository)
     {
-        _repository = new ChairRepository();
+        _repository = repository;
     }
 
     [HttpGet]
